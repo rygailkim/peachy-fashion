@@ -5,104 +5,635 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Owl-carousel CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw="
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href=".\assets\css\style.css" />
 
-    <!-- font awesome icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-      crossorigin="anonymous"
-    />
+    <!-- 
+    - primary meta tag
+    -->
+    <title>Peachy - Fashion</title>
+    <meta name="title" content="Peachy - Fashion" />
+    <meta name="description" content="About Peachy" />
 
-    <!-- Custom CSS file -->
-    <link rel="stylesheet" href="style.css" />
 
-    <title>Peachy Fashion</title>
+    <!-- 
+    - owl carousel
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- 
+    - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
   <body>
-    <!------------------------- start header ------------------------->
-    <header id="header"></header>
-    <!------------------------- end header ------------------------->
+    <!----------------------------- NAVBAR ----------------------------->
 
-    <!------------------------- start main ------------------------->
-    <main id="main">
-      <!------------------------- start hero section ------------------------->
-      <section id="hero"></section>
-      <!------------------------- end hero section ------------------------->
+    <nav class="navbar">
+      <div class="logo-wrapper">
+        <img src="./assets/img/nav-logo.svg" alt="" class="logo default" />
+        <img src="./assets/img/footer-logo.svg" alt="" class="logo white" />
+      </div>
+      <div class="nav-menu">
+        <div class="nav-menu-left paragraph-2">
+          <button class="nav-button-left">Home</button>
+          <button class="nav-button-left">Women</button>
+          <button class="nav-button-left">Men</button>
+          <button class="nav-button-left">Collections</button>
+        </div>
+        <div class="nav-menu-right paragraph-2">
+          <div class="nav-button-right"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+          <div class="nav-button-right"><a href="#"><i class="fa-solid fa-heart"></i></a></div>
+          <div class="nav-button-right"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
+        </div>
+      </div>
+      <div class="search-input">
+          <input type="text" class="search" placeholder="Search...">
+      </div>
+      <div class="menu-button">
+        <div class="menu-icon">
+          <div class="menu-line top"></div>
+          <div class="menu-line bottom"></div>
+        </div>
+      </div>
+    </nav>
 
-      <!------------------------- start featured products section ------------------------->
-      <section id="featured-products"></section>
-      <!------------------------- end featured products section ------------------------->
+    <!----------------------------- HERO ----------------------------->
+    <div class="grid-halves parallax">
+      <div class="bg-orange border-right">
+        <div class="padding">
+          <h1 class="heading-1">Create and Own Your Style.</h1>
+          <p class="paragraph-1">
+            Making fashion accessible to everyone. Inspired by street fashion and youth culture, Peachy is all about being effortlessly cool.
+          </p>
+          <button class="btn-primary">Shop Now</button>
+        </div>
+      </div>
+      <div class="bg-yellow">
+          <div class="relative">
+            <img src="./assets/img/hero-profile.png" alt="" class="grid-img" />
+            <!-- <img
+              src="./assets/img/hero-sticker-1.svg"
+              alt=""
+              class="grid-sticker top-right"
+            />
+            <img
+              src="./assets/img/hero-sticker-2.svg"
+              alt=""
+              class="grid-sticker bottom-left"
+            /> -->
+          </div>
+      </div>
+    </div>
 
-      <!------------------------- start product category section ------------------------->
-      <section id="product-category"></section>
-      <!------------------------- end product category section ------------------------->
+    <!----------------------------- TRANSITION TEXT ----------------------------->
+    <div class="looping-text">
+      <div class="looping-text-content">
+        <p class="looping-text-heading">Mix & Match</p>
+        <p class="looping-text-heading">♡</p>
+        <p class="looping-text-heading">Mix & Match</p>
+        <p class="looping-text-heading">♡</p>
+        <p class="looping-text-heading">Mix & Match</p>
+        <p class="looping-text-heading">♡</p>
+        <p class="looping-text-heading">Mix & Match</p>
+        <p class="looping-text-heading">♡</p>
+        <p class="looping-text-heading">Mix & Match</p>
+      </div>
+    </div>
 
-      <!------------------------- start featured collection section ------------------------->
-      <section id="featured-collection"></section>
-      <!------------------------- end featured products section ------------------------->
+    <!----------------------------- FEATURED PRODUCTS ----------------------------->
+    <section class="section product">
+        <div class="text-container">
+        <h1 class="heading-1">Our Peachy Products</h1>
+        <p class="paragraph-1 text-centered">
+          Magna culpa voluptate nulla amet magna elit in aliqua tempor ullamco non.
+          Lorem eiusmod esse elit nulla ad excepteur culpa cupidatat ullamco excepteur
+          veniam labore. Mollit velit ipsum incididunt veniam magna sit.
+        </p>
+      </div>
 
-      <!------------------------- start about brand section ------------------------->
-      <section id="about-brand"></section>
-      <!------------------------- end about brand section ------------------------->
+      <ul class="product-list women-products">
 
-      <!------------------------- start about creator section ------------------------->
-      <section id="about-creator"></section>
-      <!------------------------- end about creator section ------------------------->
+            <li>
+              <div class="product-card">
 
-      <!------------------------- start testimonials section ------------------------->
-      <section id="testimonials"></section>
-      <!------------------------- end testimonials section ------------------------->
+                <figure class="card-banner">
 
-      <!------------------------- start call to action section ------------------------->
-      <section id="cta"></section>
-      <!------------------------- end call to action section ------------------------->
-    </main>
+                  <a href="#">
+                    <img src="./assets/img/product-1-apricot.jpg" alt="Varsi Leather Bag" loading="lazy" width="800"
+                      height="512" class="w-100">
+                  </a>
 
-    <!------------------------- end main ------------------------->
+                  <div class="card-badge red"> -25%</div>
 
-    <!------------------------- start footer ------------------------->
-    <footer id="footer"></footer>
+                  <div class="card-actions">
 
-    <!------------------------- end footer ------------------------->
+                    <button class="card-action-btn paragraph-1" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
 
-    <!-- JQuery cdn -->
-    <script src="jquery.min.js"></script>
+                    <button class="card-action-btn cart-btn paragraph-1">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn paragraph-1" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Varsi Leather Bag</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="48.75">&pound;48.75<g/data>
+
+                    <data value="65.00">&pound;65.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/img/product2-pink.jpg" alt="Fit Twill Shirt for Woman" loading="lazy" width="800"
+                      height="512" class="w-100">
+                  </a>
+
+                  <div class="card-badge green"> New</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn paragraph-1" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn paragraph-1">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn paragraph-1" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Fit Twill Shirt for Woman</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="62.00">&pound;62.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/img/product3-black.jpg" alt="Grand Atlantic Chukka Boots" loading="lazy"
+                      width="800" height="512" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn paragraph-1" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn paragraph-1">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn paragraph-1" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Grand Atlantic Chukka Boots</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="32.00">&pound;32.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/img/product4.jpg" alt="Women's Faux-Trim Shirt" loading="lazy" width="800"
+                      height="512" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn paragraph-1" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn paragraph-1">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn paragraph-1" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Women's Faux-Trim Shirt</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="84.00">&pound;84.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/img/product5-multicolor.jpg" alt="Soft Touch Interlock Polo" loading="lazy" width="800"
+                      height="512" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn paragraph-1" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn paragraph-1">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn paragraph-1" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Soft Touch Interlock Polo</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="45.00">&pound;45.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/img/product6.jpg" alt=" Smart Watch" loading="lazy" width="800"
+                      height="512" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn paragraph-1" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn paragraph-1">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn paragraph-1" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#"> Smart Watch</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="30.00">&pound;30.00</data>
+
+                    <data value="38.00">&pound;38.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary">View All Products</button>
+
+        </div>
+    </section>
+
+    <!----------------------------- MEN & WOMEN ----------------------------->
+    <div class="grid-halves">
+      <div class="bg-yellow border-right">
+        <img src="./assets/img/sep-collection.png" alt="" class="grid-img" />
+        <button class="btn-primary">See More</button>
+      </div>
+      <div class="bg-orange">
+        <img src="./assets/img/sep-collection.png" alt="" class="grid-img" />
+        <button class="btn-primary">See More</button>
+      </div>
+    </div>
+
+     <!----------------------------- NEW COLLECTION ----------------------------->
+    <section class="section bg-blue">
+      <div class="text-container">
+        <h1 class="heading-1">Mix and Match</h1>
+        <p class="paragraph-1 text-centered">
+            Magna culpa voluptate nulla amet magna elit in aliqua tempor ullamco non.
+            Lorem eiusmod esse elit nulla ad excepteur culpa cupidatat ullamco excepteur
+            veniam labore. Mollit velit ipsum incididunt veniam magna sit.
+        </p>
+        <div class="underline-link-wrapper">
+          <a href="#" class="link underline-link">Explore Features</a>
+          <img
+            src="./assets/img//arrow-right.svg"
+            alt=""
+            class="underline-link-arrow"
+          />
+          <div class="underline-link-line"></div>
+        </div>
+      </div>
+    </section>
+
+
+     <!----------------------------- TRANSITION TEXT ----------------------------->
+    <div class="looping-text">
+      <div class="looping-text-content">
+        <p class="looping-text-heading">Mix & Match</p>
+        <p class="looping-text-heading">♡</p>
+        <p class="looping-text-heading">Mix & Match</p>
+        <p class="looping-text-heading">♡</p>
+        <p class="looping-text-heading">Mix & Match</p>
+        <p class="looping-text-heading">♡</p>
+        <p class="looping-text-heading">Mix & Match</p>
+        <p class="looping-text-heading">♡</p>
+        <p class="looping-text-heading">Mix & Match</p>
+      </div>
+    </div>
+
+   
+
+    <!----------------------------- ABOUT US ----------------------------->
+    <div class="grid-halves">
+      <div class="bg-white border-right">
+        <div class="padding">
+          <h2 class="heading-2">Our Story</h2>
+          <p class="paragraph-1">
+            Magna culpa voluptate nulla amet magna elit in aliqua tempor ullamco non.
+            Lorem eiusmod esse elit nulla ad excepteur culpa cupidatat ullamco excepteur
+            veniam labore. Mollit velit ipsum incididunt veniam magna sit.
+          </p>
+          <button class="btn-primary">Learn More</button>
+        </div>
+      </div>
+      <div class="bg-orange">
+        <img src="./assets/img/our-story.png" alt="" class="grid-img" />
+      </div>
+    </div>
+
+    <!----------------------------- TESTIMONIALS ----------------------------->
+    <div class="grid-halves">
+      <div class="bg-yellow border-right">
+        <img src="./assets/img/sep-collection.png" alt="" class="grid-img" />
+      </div>
+      <div class="bg-white">
+        <div class="padding">
+          <h2 class="heading-2">September Collection</h2>
+          <p class="paragraph-1">
+            Magna culpa voluptate nulla amet magna elit in aliqua tempor ullamco non.
+            Lorem eiusmod esse elit nulla ad excepteur culpa cupidatat ullamco excepteur
+            veniam labore. Mollit velit ipsum incididunt veniam magna sit.
+          </p>
+          <button class="btn-primary">See More</button>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <!-- --------------------------- TESTIMONIALS ---------------------------
+    <div class="grid-halves parallax">
+      <div class="bg-blue">
+        <div class="padding">
+          <h3 class="heading-3" style="margin-bottom: 4rem">
+            “Magna culpa voluptate nulla amet magna elit in aliqua tempor ullamco non.
+            Lorem eiusmod esse elit nulla ad excepteur culpa cupidatat ullamco excepteur
+            veniam labore. Mollit velit ipsum incididunt veniam magna sit.”
+          </h3>
+          <p class="paragraph-2">Juan Dela Cruz, influencer & model</p>
+        </div>
+      </div>
+      <div class="bg-blue">
+          <div class="relative">
+            <img
+              src="./assets/img/creator-profile.png"
+              alt=""
+              class="grid-img"
+            />
+        </div>
+      </div>
+    </div> -->
+
+    <!----------------------------- CALL TO ACTION ----------------------------->
+    <section class="section bg-blue parallax call-to-action" style="padding-bottom: 0">
+      <div class="text-container">
+        <h1 class="income-heading">Made For You.</h1>
+        <p class="paragraph-1">
+          Magna culpa voluptate nulla amet magna elit in aliqua tempor ullamco non.
+        </p>
+        <button class="btn-primary">Buy Now</button>
+      </div>
+      <!-- <img
+        src="./assets/img/income-1.svg"
+        alt=""
+        class="income-coin"
+        style="width: 8em; top: 2rem; left: -5rem"
+      />
+      <img
+        src="./assets/img/income-2.svg"
+        alt=""
+        class="income-coin"
+        style="width: 10em; top: -10rem; left: 15rem"
+      />
+      <img
+        src="./assets/img/income-3.svg"
+        alt=""
+        class="income-coin"
+        style="width: 7em; top: 6rem; right: 5rem"
+      />
+      <img
+        src="./assets/img/income-4.svg"
+        alt=""
+        class="income-coin"
+        style="width: 9em; top: 20rem; right: -5rem"
+      />
+      <img
+        src="./assets/img/income-5.svg"
+        alt=""
+        class="income-coin"
+        style="width: 11em; top: 22rem; left: 7rem"
+      /> -->
+      <!-- <img src="./assets/img/income-bg.svg" style="width: 100%" alt="" /> -->
+    </section>
+
+    <!----------------------------- FOOTER ----------------------------->
+    <section class="section bg-black" style="color: var(--white)">
+      <div class="footer">
+        <img src="./assets/img/footer-logo.svg" alt="" class="footer-logo" />
+        <h2 class="heading-2">
+          Subscribe to get the latest fashion trend.
+        </h2>
+        <div class="copyright">
+          <img src="./assets/img/gumroad-icon.svg" alt="" class="footer-icon" />
+          <p class="paragraph-2">Ⓒ 2022 Ryanne Gail Kim.</p>
+        </div>
+
+        <div class="footer-links-wrapper">
+          <div class="footer-links">
+            <a href="#" class="link paragraph-2">Help</a>
+            <a href="#" class="link paragraph-2">University</a>
+            <a href="#" class="link paragraph-2">Blog</a>
+            <a href="#" class="link paragraph-2">Terms of Service</a>
+            <a href="#" class="link paragraph-2">Privacy Policy</a>
+          </div>
+          <div class="footer-links">
+            <a href="#" class="link paragraph-2">Help</a>
+            <a href="#" class="link paragraph-2">University</a>
+            <a href="#" class="link paragraph-2">Blog</a>
+            <a href="#" class="link paragraph-2">Terms of Service</a>
+            <a href="#" class="link paragraph-2">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <img
+            src="./assets/img/flogo-facebook.png"
+            alt=""
+            class="footer-social-icon"
+            style="width: auto; height: 1.5em"
+          />
+          <img
+            src="./assets/img/flogo-instagram.png"
+            alt=""
+            class="footer-social-icon"
+          />
+          <img
+            src="./assets/img/flogo-pinterest.png"
+            alt=""
+            class="footer-social-icon"
+          />
+          <img
+            src="./assets/img/flogo-youtube.png"
+            alt=""
+            class="footer-social-icon"
+          />
+          <img
+            src="./assets/img/flogo-twitter.png"
+            alt=""
+            class="footer-social-icon"
+          />
+        </div>
+      </div>
+    </section>
+    
+    <!-- 
+    - jquery link
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+     <!-- 
+    - jquery link
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- 
+    - custom js link
+    -->
+    <script src="./assets/js/script.js"></script>
+  <!-- 
+    - ionicon link
+  -->
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
-    <!-- Owl Carousel Js file -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0="
-      crossorigin="anonymous"
-    ></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
-
-    <!--  isotope plugin cdn  -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
-      integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI="
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Custom Javascript -->
-    <script src="index.js"></script>
+    <!-- 
+    - font-awesome icons
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </body>
 </html>
