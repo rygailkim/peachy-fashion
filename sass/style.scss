@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+@import './include/variables.scss';
+@import './include/global.scss';
+@import './include/typography.scss';
+@import './include/color.scss';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    color: var(--black);
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a,
+img,
+span,
+input,
+button {
+    display: block;
+}
